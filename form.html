@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Contactme | Simple form-to-email sender for static websites</title>
+    <meta name="description" content="Simple form-to-email sender for static websites on shared PHP hosting">
+    <style>
+        body {background-color: #aaa; font-family: verdana;}
+        main, header, footer {width:900px; margin:20px auto; background-color: #ddd; padding:10px;}
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header><h1>Contacme</h1></header>
+    <main>
+        <form method="POST" action="contactme.php">  
+            <h3>Beds</h3>
+            <label for="Single beds">Single beds</label>
+            <select name="Single beds" id="Single beds">
+                <option value="0" selected="selected">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+            <br>
+
+            <label for="Double beds">Double beds</label>
+            <select name="Double beds" id="Double beds">
+                <option value="0" selected="selected">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+
+            <h3>Room preference</h3>
+            <label for="Bach suite">Bach Suite</label> <input type="checkbox" name="Bach suite" id="Bach suite" value="yes" checked="checked"><br>
+            <label for="Puccini suite">Puccini Suite</label> <input type="checkbox" name="Puccini suite" id="Puccini suite" value="yes"><br>
+            <label for="Mozart">Mozart</label> <input type="checkbox" name="Mozart" id="Mozart" value="yes"><br>
+            <label for="Verdi">Verdi</label> <input type="checkbox" name="Verdi" id="Verdi" value="yes"><br>
+
+            <h3>Breakfast</h3>
+            <label for="breakfast yes">Yes</label> <input type="radio" name="breakfast" id="breakfast yes" value="yes" checked="checked">
+            <label for="breakfast no">No</label> <input type="radio" name="breakfast" id="breakfast no" value="no">
+
+            <h3>Questions</h3>
+
+            <label for="email">Your email address</label><br>
+            <input type="text" name="email" id="email">
+
+            <br><br>
+
+            <label for="Questions">Domande</label><br>
+            <textarea name="Questions" id="Questions"></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Invia">
+        </form>
+</main>
+<footer>... Contactme ...</footer>
+</body>
+</html>
