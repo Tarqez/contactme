@@ -1,0 +1,10 @@
+# Byte-compiled / optimized / DLL files
+
+
+# some files
+README.html
+mongoose-ssl-6.5.exe
+mongoose.conf
+
+# Sublime Project files
+*.sublime-*
