@@ -11,12 +11,12 @@ Anchors can be managed by JS modal windows.
 ***/
 
 // email configuration
-$email_to = "ezio.tarquilio@gmail.com"; // recipient
+$email_to = "tarqez@gmail.com"; // recipient
 $email_subject = "Richiesta informazioni";
 $from = "Sito lacasadiele.it <lunacres@sh71.surpasshosting.com>";
 
 // response URL and anchors
-$path_to = "/contatti";
+$path_to = "/form.html";
 $invalid_email_anchor = "#invalid-email";
 $email_success_anchor = "#success";
 $email_failure_anchor = "#failure";
