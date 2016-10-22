@@ -2,18 +2,11 @@
 
 /***
 PHP email sender for static website
-
-Form sent by POST method
-
-Email a HTML-form and redirect to a response page with anchors, one for each result.
-The form page and the response page can be the same.
-Anchors can be managed by JS modal windows.
 ***/
 
 // email configuration
-$email_to = "tarqez@gmail.com"; // recipient
-$email_subject = "Richiesta informazioni";
-$from = "Sito lacasadiele.it <lunacres@sh71.surpasshosting.com>";
+$email_to = "website.owner@websitedomain.com"; // recipient
+$from = "Contact from <owner@php.mailserver.com>";
 
 // response URL and anchors
 $path_to = "/form.html";
@@ -42,6 +35,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // HTML-form has been submitted
     $FORM['email'] = filter_var($FORM['email'], FILTER_SANITIZE_EMAIL); // remove forbidden characters
 
     if (filter_var($FORM['email'], FILTER_VALIDATE_EMAIL)) { // valid email address
+
+        $email_subject = $FORM['email'];
 
         $headers =  "From: {$from}". "\r\n".
                     "Reply-To: {$FORM['email']}". "\r\n".
