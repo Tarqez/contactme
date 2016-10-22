@@ -29,6 +29,7 @@ function clean_POST() {
         $form[$key] = trim($value);
         $form[$key] = stripslashes($form[$key]);
         $form[$key] = htmlspecialchars($form[$key]);
+        if ($form[$key] == '') {$form[$key] = '- - -';}
     }
     return $form;
 } 
