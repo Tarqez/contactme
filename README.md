@@ -11,7 +11,12 @@ Forget how your _contact_ page will be emaild and focus on building the FORM wit
 > &lt;label for="birtday">When were you born&lt;/input>
 > &lt;input type="text" id="birtday" name="Date of birth"> 
 
-Only keep in mind that the email input element must have __name="email"__, that is the value of name attribute must be __name__ in lowercase. 
+Only keep in mind that the email input element must have __name="email"__, that is the value of name attribute must be __name__ in lowercase.
+
+## How it works
+
+Form is sent by POST method to contactme.php that builds the email, sends it and redirects to a response web-page with anchors, one for each result. Note that the form page and the response page can be the same and that anchors can be managed by JS modal windows.
+
 
 ### TO DO
 
